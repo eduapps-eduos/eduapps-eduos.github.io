@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>EduOS - Menu</title>
+    <base href="//eduapps-eduos.github.io"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="/search/style.css" rel="stylesheet" type="text/css"/>
+    <meta name="keywords" content="Site ; EduApps ; EduOS"/>
+</head>
 <head>
     <title>
         Creating Search Bar using HTML
@@ -8,14 +16,23 @@
     </title>
 
     <!-- linking the stylesheet(CSS) -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/search/style.css">
 </head>
 
 <body>
-
+       
+    <header class="header">
+      <div id="menufond">
+        <ul id="menu">
+          <li><a href="//eduapps-eduos.github.io/">Menu</a></li>
+          <li><a href="/telechargements/">Téléchargements</a></li>
+        </ul>
+      </div>
+    </header>
+    
     <!-- input tag -->
     <input id="searchbar" onkeyup="search_animal()" type="text"
-        name="search" placeholder="Search animals..">
+        name="search" placeholder="Rechcercher une page...">
 
     <!-- ordered list -->
     <ol id='list'>
@@ -33,7 +50,7 @@
     </ol>
 
     <!-- linking javascript -->
-    <script src="animals.js"></script>
+    <script src="/search/animals.js"></script>
 </body>
 
 </html>
